@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe5ef">
+  <title>A Little Apology for You ❤️</title>
+  <meta name="description" content="A little letter from the heart, made for someone special.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <main class="card">
+    <p class="eyebrow">♡ A LITTLE MESSAGE FROM MY HEART ♡</p>
+
+    <section id="homePage" class="page">
+      <div class="sparkle">✦</div>
+      <h1>I'm Sorry<span>...</span></h1>
+      <p class="subtitle">Please forgive me, my special person 💗</p>
+
+      <div class="bear">🧸</div>
+
+      <p class="message">
+        I made a mistake, and I'm truly sorry.<br>
+        You mean more to me than words can say.
+      </p>
+
+      <button class="primary-btn" id="openBtn">
+        💌 Open My Message
+      </button>
+      <p class="hint">A little letter, written just for you</p>
+    </section>
+
+    <section id="letterPage" class="page hidden">
+      <h2>A Letter for You 💌</h2>
+      <p class="subtitle">Please read this with your heart.</p>
+
+      <button class="envelope" id="envelopeBtn"
+              aria-label="Open the letter">
+        <span class="envelope-paper">💌</span>
+        <span class="wax">♥</span>
+      </button>
+      <p class="hint" id="envelopeHint">Tap the little heart to open</p>
+
+      <article id="letter" class="letter hidden">
+        <p>My Dearest, 💗</p>
+
+        <p>
+          I know I made a mistake, and I'm genuinely sorry
+          for hurting you. You are important to me, and I
+          never want to take your kindness or your presence
+          in my life for granted.
+        </p>
+
+        <p>
+          I cannot change what happened, but I can learn
+          from it. I want to listen, understand your feelings,
+          and show through my actions that I truly mean
+          my apology.
+        </p>
+
+        <p>
+          I don't expect you to forget everything straight
+          away. I only hope you can give me a chance to
+          make things better, whenever you feel ready.
+        </p>
+
+        <p class="signature">
+          I'm truly sorry. ❤️<br>
+          <span>Someone who cares about you</span>
+        </p>
+
+        <center><button class="primary-btn" id="continueBtn">
+          One More Little Question 💗
+        </button></center>
+      </article>
+    </section>
+
+    <section id="questionPage" class="page hidden">
+      <div class="bear">🧸💖</div>
+      <h2>Can You Forgive Me?</h2>
+      <p class="message">
+        You are special to me.<br>
+        I'll do my best to make things right.
+      </p>
+
+      <div class="button-group">
+        <button class="primary-btn" id="yesBtn">
+          Yes, I forgive you ❤️
+        </button>
+        <button class="secondary-btn" id="noBtn">
+          Not yet 🥺
+        </button>
+      </div>
+
+      <p class="response" id="response" aria-live="polite"></p>
+      <button class="text-btn" id="backBtn">← Read my letter again</button>
+    </section>
+
+    <section id="thanksPage" class="page hidden">
+      <div class="bear">🧸🌷</div>
+      <h2>Thank You, Sweetheart! 💗</h2>
+      <p class="message">
+        Your feelings matter to me.<br>
+        Thank you for hearing me out.<br>
+        I'll keep trying to do better.
+      </p>
+      <div class="big-heart">♥</div>
+      <p class="signature">Sending you a little love and a big hug 🤗</p>
+      <button class="text-btn" id="restartBtn">Read it again ↻</button>
+    </section>
+
+    <footer>
+      Made with a little courage and lots of love ♡
+    </footer>
+  </main>
+
+  <button id="musicBtn" class="music-btn"
+          aria-label="Play background music" aria-pressed="false">
+    ♫ Music: Off
+  </button>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/sorry.mp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
